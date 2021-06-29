@@ -23,7 +23,7 @@ pipeline {
 
 // steps
 def buildApp() {
-	dir ('/' ) {
+	dir ('.' ) {
 		def appImage = docker.build("python-app-image:${BUILD_NUMBER}")
 	}
 }
